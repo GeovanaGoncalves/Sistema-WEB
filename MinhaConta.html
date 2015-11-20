@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <title>Minha Conta</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div id="cabecalho">
+  <p class="center"<a href="PaginaInicial.html"><img src="caoGatos.jpg"></a></p>
+  </div>
+
+  <div id="minhaConta">
+      <form id="Cadastro" action="RealizadoCadastro.html" method="GET">
+        <h2 class="center">Formulário de Cadastro de Usuário</h2>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"
+        required
+        autofocus
+        title="Insira seu Nome e Sobrenome"
+        placeholder="Nome"/>
+
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade"
+        required
+        title="Insira sua Idade"
+        placeholder="Nome completo"/>
+
+        <label id="sexo">Sexo:</label>
+        Feminino  <input type="radio" id="sexof" name="sexo" value="no" />
+        Masculino <input type="radio" id="sexom" name="sexo" value="yes" />
+        <br/>
+
+        <p <label for="endereço">Endereço:</label>
+        <input type="text" id="endereço" name="endereço"
+        required
+        title="Insira sua rua"
+        placeholder="Rua"/>
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero"
+        required
+        title="Insira o número"
+        placeholder="Número"/>
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="complemento" name="bairro"
+        required
+        title="Insira o nome do Bairro"
+        placeholder="Bairro"/>
+
+        <label for="complemento">Complemento:</label>
+        <input type="text" id="complemento" name="complemento"
+        required
+        title="Insira o complemento"
+        placeholder="Complemento"/>
+        <br/>
+
+        <p <label for="cidade">Cidade:</label>
+        <select name="cidade" id="cidade">
+          <option value="select">Selecione sua Cidade</option>
+          <option value="bh">Jáo Monlevade</option>
+          <option value="sp">Barão de Cocais</option>
+          <option value="rio">Outra</option>
+        </select>
+
+        <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+          <option value="select">Selecione seu Estado</option>
+          <option value="mg">Minas Gerais</option>
+          <option value="sp">São Paulo</option>
+          <option value="rj">outro</option>
+        </select>
+        </br>
+
+        <p <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf"
+        required
+        title="Insira seu CPF (Somente Números)"
+        placeholder="CPF ex. 12345678900"
+        pattern="[0-9]{11,11}"/>
+
+        <label for="rg">RG:</label>
+        <input type="text" id="rg" name="rg"
+        required
+        title="Insira seu RG"
+        placeholder="RG"/>
+        <br/>
+
+        <p <label for="telefone">Telefone Residencial:</label>
+        <input type="text" id="telefone" name="telefone"
+        required
+        title="Insira seu Telefone Residencial"
+        placeholder="Telefone"/>
+
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular"
+        required
+        title="Insira seu celular"
+        placeholder="Celular"/>
+        </p>
+
+       <p <label for="email">E-mail:</label>
+       <input type="email" id="email" name="email"
+        required
+        title="Insira seu e-mail"
+        placeholder="E-mail"/>
+        </p>
+
+       <p <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"
+        pattern="[a-zA-Z0-9-_!$]{5,15}"
+        title="Senha de 5 a 15 caracteres."
+        placeholder="Senha"
+        required
+        onchange="form.reenter.pattern=this.value;"/>
+        </p>
+
+        <label for="senhaconf" id="reenter">Corfirme sua Senha:</label>
+        <input type="password" id="reenter" name="reenter"
+        required
+        placeholder="Insira a senha novamente"
+        title="A senha deve ser idêntica"/>
+
+      </br>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Limpar" onclick="history.go(0)"/>
+
+      </form>
+    </div>
+
+  <p class="center"><button type="button" onclick="location.href='PaginaInicial.html'">Voltar</button></p>
+
+  <div id="rodape">
+  	<p class="center">SISTEMAS WEB - PET SHOP - ADOÇÃO</p>
+  </div>
+
+</body>
+</html>
